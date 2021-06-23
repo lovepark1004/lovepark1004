@@ -1,0 +1,310 @@
+<html lang="ko">
+<head>
+    <title>발라드</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: darkgray;
+        }
+        header h1{
+            float: left;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        #search{
+            width: 50%;
+            float: left;
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+        input{
+            width: 100%;
+            border-radius: 20px;
+            border: 3px solid #bbb;
+            padding: 10px 12px;
+        }
+        header #login{
+            border: grey 2px solid;
+            float: left;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 35px;
+            margin-left: 30px;
+        }
+        header #upload{
+            border: grey 2px solid;
+            float: left;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 35px;
+            margin-left:150px;
+        }
+        #content #right{
+            width: 85%;
+            height: 1200px;
+            background-color: grey;
+            float: left;
+        }
+        #content #left{
+            width: 15%;
+            height: 1200px;
+            background-color: lightsteelblue;
+            float: left;
+        }
+        #left .left_one{
+            width: 100%;
+            height: 100px;
+            margin-top: 25px;
+        }
+        #left .left_one .imagebox{
+            width: 50px;
+            height: 50px;
+            background-color: honeydew;
+            border-radius: 5px;
+            float: left;
+            margin-left: 25px;
+            overflow: hidden;
+        }
+        #left .left_one .textbox h3{
+            float: left;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        #left .left_two{
+            width: 100%;
+            height: 100px;
+            margin-top: 25px;
+        }
+        #left .left_two .imagebox{
+            width: 50px;
+            height: 50px;
+            background-color: honeydew;
+            border-radius: 5px;
+            float: left;
+            margin-left: 25px;
+            overflow: hidden;
+        }
+        #left .left_two .textbox h3{
+            float: left;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        #left .left_three{
+            width: 100%;
+            height: 100px;
+            margin-top: 25px;
+        }
+        #left .left_three .imagebox{
+            width: 50px;
+            height: 50px;
+            background-color: honeydew;
+            border-radius: 5px;
+            float: left;
+            margin-left: 25px;
+            overflow: hidden;
+        }
+        #left .left_three .textbox h3{
+            float: left;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        #left .left_four{
+            width: 100%;
+            height: 100px;
+            margin-top: 25px;
+        }
+        #left .left_four .imagebox{
+            width: 50px;
+            height: 50px;
+            background-color: honeydew;
+            border-radius: 5px;
+            float: left;
+            margin-left: 25px;
+            overflow: hidden;
+        }
+        #left .left_four .textbox h3{
+            float: left;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        #left .left_five{
+            width: 100%;
+            height: 100px;
+            margin-top: 25px;
+        }
+        #left .left_five .imagebox{
+            width: 50px;
+            height: 50px;
+            background-color: honeydew;
+            border-radius: 5px;
+            float: left;
+            margin-left: 25px;
+            overflow: hidden;
+        }
+        #left .left_five .textbox h3{
+            float: left;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        #left .left_six{
+            width: 100%;
+            height: 100px;
+            margin-top: 25px;
+        }
+        #left .left_six .imagebox{
+            width: 50px;
+            height: 50px;
+            background-color: honeydew;
+            border-radius: 5px;
+            float: left;
+            margin-left: 25px;
+            overflow: hidden;
+        }
+        #left .left_six .textbox h3{
+            float: left;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        #first{
+            width: 100%;
+            height: 300px;
+            margin-top: 50px;
+        }
+        #second{
+            width: 100%;
+            height: 300px;
+            margin-top: 50px;
+        }
+        #third{
+            width: 100%;
+            height: 300px;
+            margin-top: 50px;
+        }
+        .right_image{
+            width: 250px;
+            height: 250px;
+            background-color: white;
+        }
+        .right_text{
+            margin-top: 10px;
+        }
+        .first_one{
+            float: left;
+            text-align: center;
+            margin-left: 140px;
+        }
+        .first_two{
+            float: left;
+            text-align: center;
+            margin-left: 100px;
+        }
+        .first_three{
+            float: left;
+            text-align: center;
+            margin-left: 100px;
+        }
+        footer{
+            width: 100%;
+            height: 50px;
+            background-color: grey;
+            text-align: center;
+        }
+        .image_box{
+            margin-top: 50px;
+            margin-left: 50px;
+            float: left;
+        }
+        .text_box{
+            float: left;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+        #firstline{
+            width: 100%;
+            float: left;
+        }
+        #secondline{
+            width: 100%;
+            float: left;
+        }
+        #thirdline{
+            width: 100%;
+            float: left;
+        }
+        #fourline{
+            width: 100%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Love Music</h1></a>
+        <div id="search">
+            <input type="text" placeholder="검색어를 입력하세요.">
+        </div>
+        <a href="upload.html"><div id="upload">
+            <h3>upload</h3>
+        </div></a>
+        <a href="login.html"><div id="login"> 
+            <h3>Login</h3>
+        </div></a>
+    </header>
+    <div id="content">
+        <div id="left">
+            <a href="hiphop.html"><div class="left_one">
+                <div class="imagebox"><img src="Rap.jpeg" width="50px" height="50px"></div>
+                <div class="textbox"><h3>HIPHOP</h3></div>
+            </div></a>
+            <a href="dance.html"><div class="left_two">
+                <div class="imagebox"><img src="dance.jpeg" width="50px" height="50px"></div>
+                <div class="textbox"><h3>DANCE</h3></div>
+            </div></a>
+            <a href="song.html"><div class="left_three">
+                <div class="imagebox"><img src="song.png" width="50px" height="50px"></div>
+                <div class="textbox"><h3>발라드</h3></div>
+            </div></a>
+            <a href="pop.html"><div class="left_four">
+                <div class="imagebox"><img src="pop.jpeg" width="50px" height="50px"></div>
+                <div class="textbox"><h3>POP</h3></div>
+            </div></a>
+            <a href="rb.html"><div class="left_five">
+                <div class="imagebox"><img src="RB.jpeg" width="50px" height="50px"></div>
+                <div class="textbox"><h3>R&B</h3></div>
+            </div></a>
+            <a href="indie.html"><div class="left_six">
+                <div class="imagebox"><img src="indie.jpeg" width="50px" height="50px"></div>
+                <div class="textbox"><h3>인디 음악</h3></div>
+            </div></a>
+        </div>
+        <div id="right">
+            <div id="firstline">
+                <div class="image_box"><img src="music.jpg" width="250px" height="250px"></div>
+                <div class="text_box"><h2>도망가자</h2><h3>선우정아</h3></div>
+            </div>
+            <div id="secondline">
+                <div class="image_box"><img src="music.jpg" width="250px" height="250px"></div>
+                <div class="text_box"><h2>도망가자</h2><h3>선우정아</h3></div>
+            </div>
+            <div id="thirdline">
+                <div class="image_box"><img src="music.jpg" width="250px" height="250px"></div>
+                <div class="text_box"><h2>도망가자</h2><h3>선우정아</h3></div>
+            </div>
+            <div id="fourline">
+                <div class="image_box"><img src="music.jpg" width="250px" height="250px"></div>
+                <div class="text_box"><h2>도망가자</h2><h3>선우정아</h3></div>
+            </div>
+        </div>
+    </div>
+    <footer>이름 : 박사랑 학번 : 20210978</footer>
+</body>
+</html>
